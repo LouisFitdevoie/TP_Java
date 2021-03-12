@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="TP1_ex2" target="15" />
+      <module name="TP1_ex2_main" target="15" />
+      <module name="TP1_ex2_test" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

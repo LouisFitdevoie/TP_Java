@@ -1,0 +1,6 @@
+be/heh/composite/sysFichiers/Fichier.java
+ be.heh.composite.sysFichiers.Fichier
+be/heh/composite/sysFichiers/Composant.java
+ be.heh.composite.sysFichiers.Composant
+be/heh/composite/sysFichiers/Composite.java
+ be.heh.composite.sysFichiers.Composite
