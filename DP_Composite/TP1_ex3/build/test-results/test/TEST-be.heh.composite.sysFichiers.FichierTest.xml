@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="be.heh.composite.sysFichiers.FichierTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-12T13:42:49" hostname="MacBook-Pro-de-Louis.local" time="0.003">
+<testsuite name="be.heh.composite.sysFichiers.FichierTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-03-12T15:02:19" hostname="MacBook-Pro-de-Louis.local" time="0.003">
   <properties/>
   <testcase name="listerSystemeFichiers" classname="be.heh.composite.sysFichiers.FichierTest" time="0.002"/>
   <testcase name="listerPlusieursFichiers" classname="be.heh.composite.sysFichiers.FichierTest" time="0.0"/>
-  <testcase name="listerUnFichier" classname="be.heh.composite.sysFichiers.FichierTest" time="0.001"/>
+  <testcase name="listerUnFichier" classname="be.heh.composite.sysFichiers.FichierTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
