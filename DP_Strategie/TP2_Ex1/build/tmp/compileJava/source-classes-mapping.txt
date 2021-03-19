@@ -1,0 +1,12 @@
+be/heh/strategie/tp2/ex1/AffichageBelgique.java
+ be.heh.strategie.tp2.ex1.AffichageBelgique
+be/heh/strategie/tp2/ex1/AffichageAllemagne.java
+ be.heh.strategie.tp2.ex1.AffichageAllemagne
+be/heh/strategie/tp2/ex1/AfficheRoyaumeUni.java
+ be.heh.strategie.tp2.ex1.AfficheRoyaumeUni
+be/heh/strategie/tp2/ex1/Affichage.java
+ be.heh.strategie.tp2.ex1.Affichage
+be/heh/strategie/tp2/ex1/Facture.java
+ be.heh.strategie.tp2.ex1.Facture
+be/heh/strategie/tp2/ex1/Client.java
+ be.heh.strategie.tp2.ex1.Client
