@@ -1,12 +1,13 @@
 package be.heh.strategie.tp2.ex2;
 
-public interface FormatEntier{
+public class FormatEntier implements Format {
+	@Override
 	public boolean checkFormat(String value){
 		boolean ok;
 		try{
-			Integer.parseInt(value);
+			int i = Integer.parseInt(value);
 			ok = true;
-		}catch(NumberFormatException nfe){
+		}catch(Exception e){
 			ok = false;
 		}
 		return ok;

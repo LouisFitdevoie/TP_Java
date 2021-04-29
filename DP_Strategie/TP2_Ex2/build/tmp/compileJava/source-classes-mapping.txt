@@ -1,0 +1,10 @@
+be/heh/strategie/tp2/ex2/Validateur.java
+ be.heh.strategie.tp2.ex2.Validateur
+be/heh/strategie/tp2/ex2/FormatEntier.java
+ be.heh.strategie.tp2.ex2.FormatEntier
+be/heh/strategie/tp2/ex2/Format.java
+ be.heh.strategie.tp2.ex2.Format
+be/heh/strategie/tp2/ex2/FormatMail.java
+ be.heh.strategie.tp2.ex2.FormatMail
+be/heh/strategie/tp2/ex2/Client.java
+ be.heh.strategie.tp2.ex2.Client
