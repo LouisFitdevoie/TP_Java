@@ -5,7 +5,6 @@ public class Client {
         Facture maFacture = new Facture(50.50);
         System.out.println("Par défaut (Belgique)");
         System.out.println("---------------------");
-        maFacture.setAffichage(new AffichageBelgique());
         maFacture.affiche();
         System.out.println("\nAllemagne");
         System.out.println("----------");

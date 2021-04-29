@@ -1,5 +1,5 @@
-be/heh/strategie/tp2/ex1/AffichageBelgique.java
- be.heh.strategie.tp2.ex1.AffichageBelgique
+be/heh/strategie/tp2/ex1/Default.java
+ be.heh.strategie.tp2.ex1.Default
 be/heh/strategie/tp2/ex1/AffichageAllemagne.java
  be.heh.strategie.tp2.ex1.AffichageAllemagne
 be/heh/strategie/tp2/ex1/AfficheRoyaumeUni.java
