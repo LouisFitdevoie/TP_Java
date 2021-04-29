@@ -1,28 +1,28 @@
 package be.heh.gui.TP4.ex1;
 
 import org.junit.Test;
+import javax.swing.*;
 
 public class CompteBancaireTest {
     @Test
-    public void test() {
-        CompteBancaire compte1 = new CompteBancaire(50.0);
-        CompteBancaire compte2 = new CompteBancaire(-7.50);
+    public static void main(String[] args)
+    {
+        CompteBancaire cb1 = new CompteBancaire(50);
+        cb1.afficherSolde();
 
-        System.out.println("Solde compte1 : " + compte1.getSolde() + " €");
-        System.out.println("Solde compte2 : " + compte2.getSolde() + " €");
+        CompteBancaire cb2 = new CompteBancaire(-7.50);
+        cb2.depot(100);
+        cb2.afficherSolde();
 
-        compte1.depot(10);
+        CompteBancaire cb3 = new CompteBancaire(50);
 
-        System.out.println("Solde compte1 : " + compte1.getSolde() + " €");
-        System.out.println("Solde compte2 : " + compte2.getSolde() + " €");
-
-        compte2.depot(15);
-
-        System.out.println("Solde compte1 : " + compte1.getSolde() + " €");
-        System.out.println("Solde compte2 : " + compte2.getSolde() + " €");
-    }
-    public static void main(String[] args) {
-        CompteBancaire compte = new CompteBancaire(50);
-        CompteBancaireFrm window = new CompteBancaireFrm(compte);
+        SwingUtilities.invokeLater(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                CompteBancaireFrm fenetre = new CompteBancaireFrm(cb3);
+            }
+        });
     }
 }

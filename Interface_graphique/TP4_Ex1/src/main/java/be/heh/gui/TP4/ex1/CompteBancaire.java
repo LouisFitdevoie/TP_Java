@@ -1,22 +1,43 @@
 package be.heh.gui.TP4.ex1;
 
 public class CompteBancaire {
-    private double solde = 0.0;
+    public double getSolde()
+    {
+        return solde;
+    }
 
-    public CompteBancaire(double solde) {
-        if(solde >= 0) {
-            this.solde = solde;
-        } else {
+    private double solde;
+
+    public  CompteBancaire()
+    {
+        this.solde = 0.0;
+    }
+
+    public CompteBancaire(double solde)
+    {
+        if(solde < 0.0)
+        {
             this.solde = 0.0;
+        }
+        else
+        {
+            this.solde = solde;
         }
     }
 
-    public void depot(double solde) {
-        this.solde += solde;
+    public void depot(double depot)
+    {
+        double s = getSolde();
+        if (s + depot >= 0)
+        {
+            s = s + depot;
+        }
+        solde = s;
     }
 
-    public double getSolde() {
-        return this.solde;
+    public void afficherSolde()
+    {
+        System.out.println("Votre compte a : " + getSolde());
     }
 
 }
