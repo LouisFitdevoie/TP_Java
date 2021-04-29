@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) {
         Saisie saisie = new Saisie();
-        ConvBin convB = new ConvBin(saisie);
-        ConvHex convH = new ConvHex(saisie);
-        ConvOctale convO = new ConvOctale(saisie);
+        ConvBin convB = new ConvBin();
+        ConvHex convH = new ConvHex();
+        ConvOctale convO = new ConvOctale();
 
         saisie.attach(convO);
         saisie.attach(convH);

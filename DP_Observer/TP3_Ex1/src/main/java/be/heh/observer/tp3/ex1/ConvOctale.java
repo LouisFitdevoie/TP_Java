@@ -1,12 +1,11 @@
 package be.heh.observer.tp3.ex1;
 
-public class ConvOctale extends Conversion {
-    public ConvOctale(Saisie saisie) {
-        this.saisie = saisie;
+public class ConvOctale implements Conversion {
+    public ConvOctale() {
     }
 
     @Override
-    public void actualise() {
-        System.out.println("Conversion en octal : " + Integer.toOctalString(saisie.getNombre()));
+    public void actualise(int nombre) {
+        System.out.println("Conversion en octal : " + Integer.toOctalString(nombre));
     }
 }

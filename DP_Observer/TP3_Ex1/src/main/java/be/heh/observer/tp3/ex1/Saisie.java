@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Saisie {
     private List<Conversion> conversions = new ArrayList<Conversion>();
-    private int nombre;
+    private int nombre = 0;
 
     public int getNombre() {
         return nombre;
@@ -16,13 +16,13 @@ public class Saisie {
         notifieTousConversion();
     }
 
-    public void attach(Conversion conv){
+    public void attach(Conversion conv) {
         conversions.add(conv);
     }
 
     public void notifieTousConversion(){
         for (Conversion conversion : conversions) {
-            conversion.actualise();
+            conversion.actualise(getNombre());
         }
     }
 }
