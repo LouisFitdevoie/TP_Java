@@ -1,16 +1,11 @@
 package be.heh.gui.TP4.ex1;
 
 public class CompteBancaire {
+    private double solde;
+
     public double getSolde()
     {
         return solde;
-    }
-
-    private double solde;
-
-    public  CompteBancaire()
-    {
-        this.solde = 0.0;
     }
 
     public CompteBancaire(double solde)

@@ -6,53 +6,57 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CompteBancaireFrm extends JFrame {
-    JPanel panel = new JPanel();
-    JButton button = new JButton("Ajouter montant");
-    JLabel label = new JLabel("Montant : ");
-    JLabel label2 = new JLabel();
-    JTextField text = new JTextField(5);
-    JTextArea textArea = new JTextArea(5,15);
-    JScrollPane scroll = new JScrollPane(textArea);
+    private CompteBancaire cb;
+    private JLabel lblSolde;
+    private JTextField txtMontant;
+    private JTextArea txtHistorique;
+    private JButton btnMontant;
+    private JScrollPane scroll;
 
-    public CompteBancaireFrm(CompteBancaire compte)
-    {
-        //Fenetre
-        setVisible(true);
-        setTitle("Compte Bancaire : " + compte);
-        setSize(450,200);
+    public CompteBancaireFrm(double montant) {
+
+        super("Compte bancaire");
+
+        int width = 450;
+        int height = 200;
+
+        cb = new CompteBancaire(montant);
+        lblSolde = new JLabel();
+        txtMontant = new JTextField("", 10);
+
+        txtHistorique = new JTextArea(5, 20);
+        txtHistorique.setEditable(false);
+
+        btnMontant = new JButton("Ajouter");
+        btnMontant.addActionListener(new AjouteMontantEcouter());
+
+        scroll = new JScrollPane(txtHistorique);
+
+        setMinimumSize(new Dimension(width, height));
         setLocationRelativeTo(null);
-        //Pour que l'app se termine lorsque l'on appuie sur la croix
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        add(panel);
-        panel.add(label);
-        panel.add(text);
-        panel.add(button);
-        panel.add(label2);
-        panel.add(scroll);
-
-        textArea.setEditable(false);
-        label2.setText("Votre solde = " + compte.getSolde() + "€");
-        textArea.setText("Vos anciens soldes : ");
-
-        button.addActionListener(new ActionListener()
-        {
-            @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                ajouteMontantEcouteur(compte);
-            }
-        });
+        setLayout(new FlowLayout());
+        add(new JLabel("Montant : "));
+        add(txtMontant);
+        add(btnMontant);
+        add(lblSolde);
+        add(scroll);
+        lblSolde.setText("le montant est "+String.valueOf(cb.getSolde()));
     }
-
-    public void ajouteMontantEcouteur(CompteBancaire compte)
+    private  class AjouteMontantEcouter implements ActionListener
     {
-        String listeSolde = textArea.getText();
-        listeSolde = listeSolde + "\n" + compte.getSolde();
-        textArea.setText(listeSolde);
-        float montant = Integer.parseInt(text.getText());
-        compte.depot(montant);
-        label2.setText("Votre solde : " + compte.getSolde() + "€");
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                cb.depot(Double.parseDouble(txtMontant.getText()));
+                lblSolde.setText("le montant est "+String.valueOf(cb.getSolde()));
+                txtHistorique.append(lblSolde.getText()+"\n");
+            }
+            catch(Exception e1)
+            {
 
+            }
+        }
     }
 }
