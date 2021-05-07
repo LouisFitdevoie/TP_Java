@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="be.heh.gui.TP4.ex1.CompteBancaireTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-26T13:51:36" hostname="MacBook-Pro-de-Louis.local" time="0.01">
+  <properties/>
+  <testcase name="test" classname="be.heh.gui.TP4.ex1.CompteBancaireTest" time="0.01"/>
+  <system-out><![CDATA[Solde compte1 : 50.0 €
+Solde compte2 : 0.0 €
+Solde compte1 : 60.0 €
+Solde compte2 : 0.0 €
+Solde compte1 : 60.0 €
+Solde compte2 : 15.0 €
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

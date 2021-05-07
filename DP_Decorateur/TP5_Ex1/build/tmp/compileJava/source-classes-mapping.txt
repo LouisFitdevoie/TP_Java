@@ -1,0 +1,16 @@
+be/heh/decorateur/tp5/ex1/PateFine.java
+ be.heh.decorateur.tp5.ex1.PateFine
+be/heh/decorateur/tp5/ex1/Thon.java
+ be.heh.decorateur.tp5.ex1.Thon
+be/heh/decorateur/tp5/ex1/BoulettesDeViande.java
+ be.heh.decorateur.tp5.ex1.BoulettesDeViande
+be/heh/decorateur/tp5/ex1/Decorateur.java
+ be.heh.decorateur.tp5.ex1.Decorateur
+be/heh/decorateur/tp5/ex1/Classique.java
+ be.heh.decorateur.tp5.ex1.Classique
+be/heh/decorateur/tp5/ex1/FourreFromage.java
+ be.heh.decorateur.tp5.ex1.FourreFromage
+be/heh/decorateur/tp5/ex1/Main.java
+ be.heh.decorateur.tp5.ex1.Main
+be/heh/decorateur/tp5/ex1/Composant.java
+ be.heh.decorateur.tp5.ex1.Composant

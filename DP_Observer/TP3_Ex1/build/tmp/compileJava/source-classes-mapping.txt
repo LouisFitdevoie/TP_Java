@@ -1,0 +1,12 @@
+be/heh/observer/tp3/ex1/Conversion.java
+ be.heh.observer.tp3.ex1.Conversion
+be/heh/observer/tp3/ex1/Client.java
+ be.heh.observer.tp3.ex1.Client
+be/heh/observer/tp3/ex1/Saisie.java
+ be.heh.observer.tp3.ex1.Saisie
+be/heh/observer/tp3/ex1/ConvHex.java
+ be.heh.observer.tp3.ex1.ConvHex
+be/heh/observer/tp3/ex1/ConvBin.java
+ be.heh.observer.tp3.ex1.ConvBin
+be/heh/observer/tp3/ex1/ConvOctale.java
+ be.heh.observer.tp3.ex1.ConvOctale
