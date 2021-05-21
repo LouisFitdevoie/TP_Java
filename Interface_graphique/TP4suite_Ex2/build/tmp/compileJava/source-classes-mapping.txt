@@ -1,0 +1,8 @@
+be/heh/gui/tp4suite/ex2/Main.java
+ be.heh.gui.tp4suite.ex2.Main
+be/heh/gui/tp4suite/ex2/DrawCanvas.java
+ be.heh.gui.tp4suite.ex2.DrawCanvas
+be/heh/gui/tp4suite/ex2/SliderColor.java
+ be.heh.gui.tp4suite.ex2.SliderColor
+be/heh/gui/tp4suite/ex2/SliderListener.java
+ be.heh.gui.tp4suite.ex2.SliderListener
