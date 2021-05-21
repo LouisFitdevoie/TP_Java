@@ -3,24 +3,36 @@ package be.heh.observer.tp3.ex2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StationMeteo {
-    private List<MeteoListener> meteoListeners;
+public class StationMeteo extends Observable {
+    private int temperature;
+    private List<Integer> temperatures;
+    private int humidite;
+
     public StationMeteo() {
-         this.meteoListeners = new ArrayList<MeteoListener>();
+        this.temperatures = new ArrayList<>();
     }
-    public void addMeteoListener(MeteoListener listener) {
-        this.meteoListeners.add(listener);
+    public int getTemperature() {
+        return this.temperature;
     }
-    public void removeMeteoListener(MeteoListener listener) {
-        this.meteoListeners.remove(listener);
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
+        this.temperatures.add(temperature);
+        super.notifierTousObservers();
     }
-    public void ajouterDonnees(int degreCelsius, int humidity) {
-        final MeteoEvent me = new MeteoEvent(degreCelsius,humidity);
-        fireMeteoListeners(me);
+    public int getHumidite() {
+        return this.humidite;
     }
-    protected void fireMeteoListeners(MeteoEvent me) {
-        for(MeteoListener listener : meteoListeners) {
-            listener.meteoRefreshed(me);
-        }
+    public void setHumidite(int humidite) {
+        this.humidite = humidite;
+        super.notifierTousObservers();
+    }
+    public List<Integer> getTemperatures() {
+        return this.temperatures;
+    }
+    public void setTemperatureHumidite(int temperature, int humidite) {
+        this.temperature = temperature;
+        this.temperatures.add(temperature);
+        this.humidite = humidite;
+        super.notifierTousObservers();
     }
 }

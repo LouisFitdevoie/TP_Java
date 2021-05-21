@@ -1,7 +1,7 @@
 package be.heh.composite.prjmagasin;
 
 public class Magasin implements Composant {
-    protected double benefice;
+    private double benefice;
 
     public Magasin(double benefice) {
         this.benefice = benefice;

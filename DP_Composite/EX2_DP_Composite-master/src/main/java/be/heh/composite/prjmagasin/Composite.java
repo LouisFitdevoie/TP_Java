@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Composite implements Composant {
 
-    protected List<Composant> composants = new ArrayList<>();
+    private List<Composant> composants = new ArrayList<>();
 
     @Override
     public double calculBenefice() {

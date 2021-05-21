@@ -1,10 +1,12 @@
-be/heh/observer/tp3/ex2/AffichageCondition.java
- be.heh.observer.tp3.ex2.AffichageCondition
-be/heh/observer/tp3/ex2/MeteoEvent.java
- be.heh.observer.tp3.ex2.MeteoEvent
-be/heh/observer/tp3/ex2/MeteoListener.java
- be.heh.observer.tp3.ex2.MeteoListener
-be/heh/observer/tp3/ex2/Client.java
- be.heh.observer.tp3.ex2.Client
+be/heh/observer/tp3/ex2/Observer.java
+ be.heh.observer.tp3.ex2.Observer
+be/heh/observer/tp3/ex2/AffichageMeteo.java
+ be.heh.observer.tp3.ex2.AffichageMeteo
+be/heh/observer/tp3/ex2/AffichageStatistiquesMeteo.java
+ be.heh.observer.tp3.ex2.AffichageStatistiquesMeteo
+be/heh/observer/tp3/ex2/Observable.java
+ be.heh.observer.tp3.ex2.Observable
 be/heh/observer/tp3/ex2/StationMeteo.java
  be.heh.observer.tp3.ex2.StationMeteo
+be/heh/observer/tp3/ex2/Main.java
+ be.heh.observer.tp3.ex2.Main
