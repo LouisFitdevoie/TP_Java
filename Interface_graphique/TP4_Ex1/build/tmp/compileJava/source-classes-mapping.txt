@@ -1,5 +1,7 @@
-be/heh/gui/TP4/ex1/CompteBancaire.java
- be.heh.gui.TP4.ex1.CompteBancaire
+be/heh/gui/TP4/ex1/Fenetre.java
+ be.heh.gui.TP4.ex1.Fenetre
 be/heh/gui/TP4/ex1/CompteBancaireFrm.java
  be.heh.gui.TP4.ex1.CompteBancaireFrm
  be.heh.gui.TP4.ex1.CompteBancaireFrm$AjouteMontantEcouter
+be/heh/gui/TP4/ex1/CompteBancaire.java
+ be.heh.gui.TP4.ex1.CompteBancaire
